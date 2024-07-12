@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--m*qdk^xeim*b=6ktp6%7p2^ne9+m=bc0a_)u+unj(gt)2_ca7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://knowledge-navigators.vercel.app/', 'localhost',]
 
 
 # Application definition
