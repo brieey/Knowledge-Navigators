@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('learnovation_launchpad.urls')),
+    path('', include('learnovation.learnovation_launchpad.urls')),
+    #Original: path('', include('learnovation_launchpad.urls')),
 ]

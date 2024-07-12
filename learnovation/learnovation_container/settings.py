@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'learnovation_launchpad',
+    'learnovation.learnovation_launchpad',
+    #Original: learnovation_launchpad',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'learnovation_launchpad.urls'
+ROOT_URLCONF = 'learnovation.learnovation_container.urls'
+#Original: ROOT_URLCONF = 'learnovation_launchpad.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +71,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'learnovation_container.wsgi.application'
+WSGI_APPLICATION = 'learnovation.learnovation_container.wsgi.application'
+#Original: WSGI_APPLICATION = 'learnovation_container.wsgi.application'
 
 
 # Database
