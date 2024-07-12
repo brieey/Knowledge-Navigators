@@ -1,19 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "manage.py",
-        "use": "@vercel/python"
-      }
-    ],
+    "builds": [{
+        "src": "learnovation_container/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.3" }
+    }],
     "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "manage.py"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "learnovation_container/wsgi.py"
+        }
     ]
-  }
+}
