@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure--m*qdk^xeim*b=6ktp6%7p2^ne9+m=bc0a_)u+unj(gt)2_ca7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
-
+ALLOWED_HOSTS = ['*']
+#Original: ALLOWED_HOSTS = ['.vercel.app']
 
 # Application definition
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'learnovation.learnovation_container.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+   'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
@@ -126,3 +126,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
