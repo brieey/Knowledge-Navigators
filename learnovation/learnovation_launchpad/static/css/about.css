@@ -18,6 +18,9 @@ main {
 
 .header-img {
   padding: 0;
+  margin-right: -3rem;
+  margin-left: -3rem;
+  margin-top: 35px;
 }
 
 .about-section{
