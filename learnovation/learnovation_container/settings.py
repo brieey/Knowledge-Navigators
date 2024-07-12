@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--m*qdk^xeim*b=6ktp6%7p2^ne9+m=bc0a_)u+unj(gt)2_ca7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://knowledge-navigators.vercel.app/', 'localhost',]
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
