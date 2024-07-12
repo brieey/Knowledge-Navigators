@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "learnovation_container/wsgi.py",
+        "src": "learnovation/learnovation_container/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.3" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "learnovation_container/wsgi.py"
+            "dest": "learnovation/learnovation_container/wsgi.py"
         }
     ]
 }
