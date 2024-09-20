@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--m*qdk^xeim*b=6ktp6%7p2^ne9+m=bc0a_)u+unj(gt)2_ca7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 #Original: ALLOWED_HOSTS = ['.vercel.app']
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'learnovation.learnovation_launchpad',
+    'learnovation_launchpad',
     #Original: learnovation_launchpad',
 ]
 
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'learnovation.learnovation_container.urls'
+ROOT_URLCONF = 'learnovation_container.urls'
 #Original: ROOT_URLCONF = 'learnovation_launchpad.urls'
 
 TEMPLATES = [
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'learnovation.learnovation_container.wsgi.application'
+WSGI_APPLICATION = 'learnovation_container.wsgi.application'
 #Original: WSGI_APPLICATION = 'learnovation_container.wsgi.application'
 
 
